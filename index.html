@@ -528,7 +528,7 @@ body{
   const appendUrlParams=(baseUrl)=>{const params=window.location.search;if(!params)return baseUrl;return baseUrl.includes('?')?baseUrl+params.replace('?','&'):baseUrl+params};
   const isAndroid=()=>/android/i.test(navigator.userAgent);
   const breakToNativeBrowser=(url)=>{if(isAndroid()){window.location.href='intent://'+url.replace(/^https?:\/\//,'')+'#Intent;scheme=https;end'}else{window.location.href=url.replace(/^https:\/\//,'x-safari-https://')}};
-  function goToOffer(){const baseUrl='https://giftclick.org/aff_c?offer_id=3530&aff_id=23122';breakToNativeBrowser(appendUrlParams(baseUrl))}
+  function goToOffer(){const baseUrl='https://taprkr.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidGlkIjoiYzBiNGIxZWExM2M0ZmNkNWIxNDMiLCJ0cyI6MTc4NjMwNjc1MzA2OX0';breakToNativeBrowser(appendUrlParams(baseUrl))}
   function goAff(){goToOffer()}
   function openModal(){document.getElementById('ov').classList.add('open')}
   function closeModal(){document.getElementById('ov').classList.remove('open')}
